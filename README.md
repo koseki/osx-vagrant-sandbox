@@ -14,26 +14,22 @@ Vagrant configulation sample. Double click `*.command` file to provisioning, run
 
 ## Provisioning
 
-- [provision.sh](sandbox/vm/provision.sh)
-
-Add script to `provision.sh` with version number(+1), and commit.
+Add script to [provision.sh](sandbox/vm/provision.sh) with version number(+1), and commit.
 
 Ask team members to double click [provision.command](sandbox/bin/provision.command).
 
-`provision.sh` execute only the blocks with new version numbers. The version number is saved to `/root/.provisioning_version`.
+The [provision.sh](sandbox/vm/provision.sh) executes only the blocks with new version numbers. The version number is saved to `/root/.provisioning_version`.
 
 
 ## Commands
 
-`sandbox/bin/*.command` scripts SSH login to the VM and execute `sandbox/bin/local/*.command`.
-
-- [sandbox/bin](sandbox/bin)
+[sandbox/bin/*.command](sandbox/bin) scripts SSH login to the VM and execute [sandbox/bin/local/*.command](sandbox/bin/local).
 
 ```
 vagrant ssh -c '/vagrant/sandbox/bin/local/start.command'
 ```
 
-Also, you can run `sandbox/bin/local/*.command` directly on OSX.
+Also, you can run [sandbox/bin/local/*.command](sandbox/bin/local) directly on OSX.
 
 
 ## Servers
@@ -62,6 +58,6 @@ Frontend-engineers, designers, or editors can edit HTML, CSS, JS, templates on t
 
 All configuration files should be added to the repository.
 
-Team members fetch the configuration files, restart VM, double click `provision.command` if required, and all works fine!
+Team members fetch the configuration files, restart VM, double click [provision.command](sandbox/bin/provision.command) if required, and all works fine!
 
 Maintenance is not so difficult, because every members can use this sandbox on VM or OSX, in everydays development.
