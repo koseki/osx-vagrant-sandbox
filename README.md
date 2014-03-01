@@ -42,9 +42,18 @@ Also, you can run `sandbox/bin/local/*.command` directly on OSX.
 
 - https://github.com/ddollar/foreman
 
-And you can `foreman start` locally, if you want. Procfile works on both VM and OSX. Just double click `sandbox/bin/local/start.command` to start foreman.
+See [Procfile](sandbox/Procfile) to see what foreman do.
 
-Maintenance is not so difficult, because both engineer and non-engineer members can use this sandbox for everydays development.
+And you can `foreman start` locally, if you want. Procfile works on both VM and OSX. Just double click [sandbox/bin/local/start.command](sandbox/bin/local/start.command) to start foreman.
+
+
+## Shared folder
+
+Project root directory mounted to `/vagrant`.
+
+- [Vagrantfile](sandbox/vm/Vagrantfile)
+
+Frontend-engineers, designers, or editors can edit HTML, CSS, JS, templates on their local machine. Any changes can see througe VM immediately.
 
 
 ## Configuration files
@@ -53,4 +62,6 @@ Maintenance is not so difficult, because both engineer and non-engineer members 
 
 All configuration files should be added to the repository.
 
-Team members fetch the configuration files, restart VM, and all works fine!
+Team members fetch the configuration files, restart VM, double click `provision.command` if required, and all works fine!
+
+Maintenance is not so difficult, because every members can use this sandbox on VM or OSX, in everydays development.
