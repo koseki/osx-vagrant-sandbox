@@ -1,0 +1,2 @@
+nginx: nginx -p . -c conf/nginx.conf
+rails_sample: bin/local/sample.command
