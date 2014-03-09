@@ -65,7 +65,8 @@ if [ $CURRENT_VERSION -lt $VERSION ]; then
 
   chown -R vagrant:vagrant /vagrant/app/sample
   cd /vagrant/app/sample
-  sudo -u vagrant PATH=/usr/local/sbin:/usr/local/bin:$PATH bundle exec rake db:create
+  sudo -u vagrant PATH=/usr/local/sbin:/usr/local/bin:$PATH /usr/local/bin/bundle install
+  sudo -u vagrant PATH=/usr/local/sbin:/usr/local/bin:$PATH /usr/local/bin/bundle exec rake db:create
 
   echo $VERSION > $VERSION_FILE
 fi
