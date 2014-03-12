@@ -8,7 +8,7 @@ Vagrant configulation sample. Double click `*.command` file to provisioning, run
  1. Install [VirtualBox](https://www.virtualbox.org/) - easy
  2. Install [Vagrant](http://www.vagrantup.com/) - very easy
  3. Dobule click [start.command](sandbox/bin/start.command)
- 4. Wait few minutes...
+ 4. Wait for a few minutes...
  5. Access http://192.168.33.10:8080/ and you can access Rails through Nginx
 
 
